@@ -1,0 +1,31 @@
+---
+layout: default
+title: CHYST Support Association
+excerpt: I can be single, but my CP must get married.
+---
+<div class="text">
+    <p>Hi, we are CHYST Support Association, referred to as CSA.</p>   
+    <p>We work hard to make C&H a couple. And we will never give up.</p>    
+    <p>Our slogan is "I can be single, but my CP must get married".</p>    
+    <p><a href="https://github.com/CSA2021">Say hi</a>, or find us in Zaozhuang No. 8 Middle School.</p>    
+</div>
+
+<h2 class="section-heading">Writing</h2>
+
+<ul class="list">
+  {% for post in site.posts %}
+    {% unless post.draft %}
+      <li class="list_item">
+          <a class="list_link" href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+
+<footer class="footer">
+  <nav>
+      <p>Powered by <a href="https://www.deepl.com/">DeepL</a>
+  </nav>
+</footer>
